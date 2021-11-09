@@ -1,5 +1,5 @@
 #!/bin/bash
-#coded by jaredbrts
+#coded by K3ysTr0K3R
 #coded with love/lol
 
 clear 
