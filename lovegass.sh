@@ -87,23 +87,18 @@ if [ $type -eq 1 ]; then
       echo '💌️💌️💌️💌️💌️😻️😻️😻️😻️😻️😻️'
 
 read vuln
-vuln="nmap -sV --script vuln -Pn -T5 $vuln"
-echo '💘️💘️💘️💘️💘️💖️💖️💖️💖️💖️'
-$vuln
+nmap -sV --script vuln -Pn -T5 $vuln
 echo '💘️💘️💘️💘️💘️💖️💖️💖️💖️💖️'
 echo 'complete'
 fi
 
 if [ $type -eq 2 ]; then
-read http-enum+DNSbrute
 echo '💌️💌️💌️💌️💌️😻️😻️😻️😻️😻️😻️'
 echo 'input target'
 echo '💌️💌️💌️💌️💌️😻️😻️😻️😻️😻️😻️'
 
 read http
-http="nmap -sV --script http-enum,dns-brute $http"
-echo '💘️💘️💘️💘️💘️💖️💖️💖️💖️💖️'
-$http
+nmap -sV --script http-enum,dns-brute $http
 echo '💘️💘️💘️💘️💘️💖️💖️💖️💖️💖️'
 echo 'complete'
 fi
