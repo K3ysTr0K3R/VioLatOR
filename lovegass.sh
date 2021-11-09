@@ -29,7 +29,7 @@ echo -e '\e[31m
 		   echo "finding domains on $A"
 		   echo '💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️'
 		   echo "making a folder for $A and saving it in LoveGASS folder project"
-		   echo ''
+		   echo '💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️'
 		   mkdir $A
 		   assetfinder $A | cat > LoveGASS.txt
 		   cat LoveGASS.txt | httprobe | cat >> LoveGASS.txt
@@ -68,14 +68,16 @@ cat KierstenDNS
 sudo mv DNS ./$A
 
          echo '❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️ vuln base and recon ❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️'
-
-	 echo '{1} vuln'
-	 echo '{2} http-enum + DNSbrute'
-         echo '{3} nuclei'
-         echo '{4} BruteForce'
-         echo '{5} Nslookup'
-	 echo '{6} nmapScan'
-	 echo '{7} Masscan'
+         
+	 echo '💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕💕️💕💕️💕️'
+	 echo '{1} vuln'                       💗️'
+	 echo '{2} http-enum + DNSbrute'       💗️'
+         echo '{3} nuclei'                     💗️'
+         echo '{4} BruteForce                  💗️'
+         echo '{5} Nslookup                    💗️'
+	 echo '{6} nmapScan                    💗️'
+	 echo '{7} Masscan                     💗️'
+         echo '💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕💕️💕💕️💕️'
      
 read type
 
