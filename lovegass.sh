@@ -28,12 +28,12 @@ echo -e '\e[31m
 		   echo '💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️'
 		   echo "finding domains on $A"
 		   echo '💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️💘️'
-		   echo "making a folder for $A and saving it in KierstenXOXO folder project"
+		   echo "making a folder for $A and saving it in LoveGASS folder project"
 		   echo ''
 		   mkdir $A
 		   assetfinder $A | cat > Kiersten1.txt
-		   cat Kiersten1.txt | httprobe | cat >> Kiersten1.txt
-		   cat Kiersten1.txt
+		   cat LoveGASS.txt | httprobe | cat >> LoveGASS.txt
+		   cat LoveGASS.txt
 		   echo '💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️'
 		   echo '💖️💖️💖️💖️💖️💖️💖️💖️💖️💖️💖️💖️💖️💖️💖️💖️'
 		        
@@ -61,11 +61,11 @@ echo 'love you babes you mean so so much to me🥰️💖️😘️💝️❤️
 echo -n 'input your target here for DNSRECON::'
 read B
 echo "scanning $B with DNSrecon🥰️💖️😘️💝️❤️"
-dnsrecon -d $B | cat > KierstenDNS
+dnsrecon -d $B | cat > DNS
 echo "scanning with fierce on $B 🥰️💖️😘️💝️❤️"
-fierce --domain $B | cat >> KierstenDNS
+fierce --domain $B | cat >> DNS
 cat KierstenDNS
-sudo mv KierstenDNS ./$A
+sudo mv DNS ./$A
 
          echo '❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️ vuln base and recon ❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️'
 
