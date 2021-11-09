@@ -70,12 +70,12 @@ sudo mv DNS ./$A
          echo '❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️ vuln base and recon ❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️❤️‍🔥️'
          
 	 echo '💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕💕️💕💕️💕💕️'
-	 echo '💗️{1} vuln                        💗️'
+	 echo '💗️{1} Nmap-vuln                   💗️'
 	 echo '💗️{2} http-enum + DNSbrute        💗️'
          echo '💗️{3} nuclei                      💗️'
          echo '💗️{4} BruteForce                  💗️'
          echo '💗️{5} Nslookup                    💗️'
-	 echo '💗️{6} nmapScan                    💗️'
+	 echo '💗️{6} Normal-nmapScan             💗️'
 	 echo '💗️{7} Masscan                     💗️'
          echo '💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕️💕💕️💕💕️💕💕️'
      
@@ -102,9 +102,9 @@ echo '💌️💌️💌️💌️💌️😻️😻️😻️😻️😻️😻
 
 read http
 http="nmap -sV --script http-enum,dns-brute $http"
-echo ''
+echo '💘️💘️💘️💘️💘️💖️💖️💖️💖️💖️'
 $http
-echo ''
+echo '💘️💘️💘️💘️💘️💖️💖️💖️💖️💖️'
 echo 'complete'
 fi
 
