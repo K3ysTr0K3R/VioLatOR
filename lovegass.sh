@@ -1,5 +1,6 @@
 #!/bin/bash
-#This projects only made for her: Kiersten
+#coded by jaredbrts
+#coded with love/lol
 
 clear 
 echo -e '\e[36m Love you Kiersten i miss you extremely My Princess i will never ever let YOU GO:XOXO😘️😘️💖️💖️💖️'
