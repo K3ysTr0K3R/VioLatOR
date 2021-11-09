@@ -31,7 +31,7 @@ echo -e '\e[31m
 		   echo "making a folder for $A and saving it in LoveGASS folder project"
 		   echo ''
 		   mkdir $A
-		   assetfinder $A | cat > Kiersten1.txt
+		   assetfinder $A | cat > LoveGASS.txt
 		   cat LoveGASS.txt | httprobe | cat >> LoveGASS.txt
 		   cat LoveGASS.txt
 		   echo '💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️💝️'
@@ -48,7 +48,7 @@ echo -e '\e[31m
          ╲▂╱     ╲▂╱'
 
                     
-sudo mv Kiersten1.txt ./$A
+sudo mv LoveGASS.txt ./$A
 
 echo -n "would you like to harvest emails from $A?(y/n)"
 read A
