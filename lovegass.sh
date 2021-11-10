@@ -73,7 +73,7 @@ sudo mv DNS ./$A
 	 echo '💗️{1} Nmap-vuln                   💗️'
 	 echo '💗️{2} http-enum + DNSbrute        💗️'
          echo '💗️{3} nuclei                      💗️'
-         echo '💗️{4} BruteForce                  💗️'
+         echo '💗️{4} BruteForce//ssh             💗️'
          echo '💗️{5} Nslookup                    💗️'
 	 echo '💗️{6} Normal-nmapScan             💗️'
 	 echo '💗️{7} Masscan                     💗️'
@@ -94,7 +94,7 @@ fi
 
 if [ $type -eq 2 ]; then
 echo '💌️💌️💌️💌️💌️😻️😻️😻️😻️😻️😻️'
-echo 'input target'
+echo 'input target for enum'
 echo '💌️💌️💌️💌️💌️😻️😻️😻️😻️😻️😻️'
 
 read http
@@ -102,5 +102,23 @@ nmap -sV --script http-enum,dns-brute $http
 echo '💘️💘️💘️💘️💘️💖️💖️💖️💖️💖️'
 echo 'complete'
 fi
-
+if [ $type -eq 3 ]; then
+echo ''
+echo 'place target for nuclei magic'
+echo ''
+read nuclei
+nuclei -u $nuclei
+echo ''
+echo 'complete'
+fi
+   if [ $type -eq 4 ]; then
+   echo ''
+   echo 'place the target you want to bruteforce'
+   echo ''
+   
+read brute
+ncrack -U admin.txt -P password.txt $brute:22
+echo ''
+echo 'complete'
+fi
 
