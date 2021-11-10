@@ -50,11 +50,11 @@ echo -e '\e[31m
                     
 sudo mv LoveGASS.txt ./$A
 
-echo -n "would you like to harvest emails from $A?(y/n)"
-read A
-if [ $A == "y" ]
+echo -n "would you like to scan with nikto with those results?(y/n)"
+FILE=LoveGASS.txt
+if [ $FILE == "y" ]
 then
-	emailfinder -d $A
+	nikto -h $FILE --ssl
 fi
 
 echo 'love you babes you mean so so much to me🥰️💖️😘️💝️❤️'
