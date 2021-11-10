@@ -37,12 +37,11 @@ then
 	nikto -h $FILE --ssl
 fi
 
-echo 'love you babes you mean so so much to me🥰️💖️😘️💝️❤️'
 echo -n 'input your target here for DNSRECON::'
 read B
-echo "scanning $B with DNSrecon🥰️💖️😘️💝️❤️"
+echo "scanning $B with DNSrecon"
 dnsrecon -d $B | cat > DNS
-echo "scanning with fierce on $B 🥰️💖️😘️💝️❤️"
+echo "scanning with fierce on $B"
 fierce --domain $B | cat >> DNS
 cat DNS
 sudo mv DNS ./$A
