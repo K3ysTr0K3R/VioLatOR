@@ -168,5 +168,11 @@ if [ $nmap == 'y' ]
        if [ $type -eq 7 ]; then
        echo '###############################'
        echo 'give me a target for a masscan'
-       echo '###############################       
-       read
+       echo '###############################'       
+       read masscan
+       masscan $masscan/24
+       echo '########'
+       echo 'complete'
+       echo '########'
+       fi
+  if []
