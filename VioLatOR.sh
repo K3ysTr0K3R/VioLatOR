@@ -139,4 +139,34 @@ echo '########'
 echo 'complete'
 echo '########'
 fi
+if [ $type -eq 5 ]; then
+echo '#############################'
+echo 'place your target <domain/ip>'
+echo '#############################'
+read nslookup
 
+nslookup $nslookup
+echo '########'
+echo 'complete'
+echo '########'
+fi
+if [ $type -eq 6 ]; then
+echo '#################################'
+echo 'place target for normal nmap-scan'
+echo '#################################'
+read nmap
+
+nmap -sV $nmap -Pn
+echo '#######################################################'
+echo 'completed but do you want to store them in a file?(y/n)'
+echo '#######################################################'
+if [ $nmap == 'y' ]
+    then
+       nmap -sV $nmap > nmap_results.txt
+       fi
+       
+       if [ $type -eq 7 ]; then
+       echo '###############################'
+       echo 'give me a target for a masscan'
+       echo '###############################       
+       read
