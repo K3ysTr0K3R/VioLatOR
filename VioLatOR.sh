@@ -36,7 +36,11 @@ echo -e '\e[31m
 		   assetfinder $A | cat > violator.txt
 		   cat violator.txt | httprobe | cat >> violator.txt
 		   cat violator.txt
-		   echo '==========================='
+		   echo '============================================================================='
+                   echo 'looking for access points and saving it in your file called ACCESS.points.txt'
+		   echo '============================================================================='
+		   whatweb -i violator.txt
+		   
 		        
       echo -e '\e[33m  
            ▄▄▄▄
@@ -65,7 +69,7 @@ echo -e '\e[31m
                     
 sudo mv violator.txt ./$A
 
-echo -n "would you like to scan with nikto with those results?(y/n)"
+echo -n "would you like to scan with nikto with those results? it will awhile(y/n)"
 FILE=violator.txt
 if [ $FILE == "y" ]
 then
@@ -83,15 +87,15 @@ sudo mv DNS ./$A
 
          echo '============================ vuln base and recon ============================'
          
-	 echo '()()()()()()()()()()()()()()()()()()'
-	 echo '(){1} Nmap-vuln                   ()'
-	 echo '(){2} http-enum + DNSbrute        ()'
-         echo '(){3} nuclei                      ()'
-         echo '(){4} BruteForce//ssh             ()'
-         echo '(){5} Nslookup                    ()'
-	 echo '(){6} Normal-nmapScan             ()'
-	 echo '(){7} Masscan                     ()'
-         echo '()()()()()()()()()()()()()()()()()()'
+	 echo '()()()()()()()()()()()()()()()()()()()()()()()'
+	 echo '(){1} Nmap-vuln              |  amass       ()'
+	 echo '(){2} http-enum + DNSbrute   |  sublister   ()'
+         echo '(){3} nuclei                 |              ()'
+         echo '(){4} BruteForce//ssh        |              ()'
+         echo '(){5} Nslookup               |              ()'
+	 echo '(){6} Normal-nmapScan        |              ()'
+	 echo '(){7} Masscan                |              ()'
+         echo '()()()()()()()()()()()()()()()()()()()()()()()'
      
 read type
 
@@ -175,4 +179,10 @@ if [ $nmap == 'y' ]
        echo 'complete'
        echo '########'
        fi
-  if []
+  if [ $type -eq 8 ]; then
+  echo '##############################'
+  echo 'place a target for amass recon'
+  echo '##############################'
+  read amass
+  
+  amass 
