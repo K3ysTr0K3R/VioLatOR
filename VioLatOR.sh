@@ -30,7 +30,7 @@ echo -e '\e[31m
 		   echo '==============================================================='
 		   echo "finding domains on $A"
 		   echo '==============================================================='
-		   echo "making a folder for $A and saving it in LoveGASS folder project"
+		   echo "making a folder for $A and saving it in VioLatOR folder project"
 		   echo '==============================================================='
 		   mkdir $A
 		   assetfinder $A | cat > violator.txt
@@ -39,7 +39,7 @@ echo -e '\e[31m
 		   echo '============================================================================='
                    echo 'looking for access points and saving it in your file called ACCESS.points.txt'
 		   echo '============================================================================='
-		   whatweb -i violator.txt
+		   whatweb -i violator.txt | cat > ACCESS.points.txt
 		   
 		        
       echo -e '\e[33m  
@@ -69,7 +69,7 @@ echo -e '\e[31m
                     
 sudo mv violator.txt ./$A
 
-echo -n "would you like to scan with nikto with those results? it will awhile(y/n)"
+echo -n "would you like to scan with nikto with those results? it will take awhile(y/n)"
 FILE=violator.txt
 if [ $FILE == "y" ]
 then
@@ -159,15 +159,8 @@ echo '#################################'
 echo 'place target for normal nmap-scan'
 echo '#################################'
 read nmap
-
 nmap -sV $nmap -Pn
-echo '#######################################################'
-echo -n 'completed but do you want to store them in a file?(y/n)'
-echo '#######################################################'
-if [ $nmap == 'y' ]
-    then
-       nmap -sV $nmap > nmap_results.txt
-       fi
+fi
        
        if [ $type -eq 7 ]; then
        echo '###############################'
