@@ -90,7 +90,7 @@ sudo mv DNS ./$A
 	 echo '()()()()()()()()()()()()()()()()()()()()()()()'
 	 echo '(){1} Nmap-vuln              |  amass       ()'
 	 echo '(){2} http-enum + DNSbrute   |  sublister   ()'
-         echo '(){3} nuclei                 |              ()'
+         echo '(){3} nuclei                 |  whatweb/24  ()'
          echo '(){4} BruteForce//ssh        |              ()'
          echo '(){5} Nslookup               |              ()'
 	 echo '(){6} Normal-nmapScan        |              ()'
@@ -162,7 +162,7 @@ read nmap
 
 nmap -sV $nmap -Pn
 echo '#######################################################'
-echo 'completed but do you want to store them in a file?(y/n)'
+echo -n 'completed but do you want to store them in a file?(y/n)'
 echo '#######################################################'
 if [ $nmap == 'y' ]
     then
