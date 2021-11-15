@@ -1,5 +1,5 @@
 #!/bin/bash
-#coded by K3ysTr0K3R
+#coded by MegaMind707
 
 clear 
 echo -e '\e[36m '
