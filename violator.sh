@@ -7,22 +7,7 @@ echo -e '\e[36m '
 echo -e '\e[36m '
 echo -e '\e[36m '
 
-echo -e '\e[31m    
-                        ▄▄▄▄▄▄▄▄
-                  █   ▄██████████▄
-                 █▐   ████████████
-                 ▌▐  ██▄▀██████▀▄██
-                ▐┼▐  ██▄▄▄▄██▄▄▄▄██
-                ▐┼▐  ██████████████
-                ▐▄▐████─▀▐▐▀█─█─▌▐██▄
-                  █████──────────▐███▌
-                  █▀▀██▄█─▄───▐─▄███▀
-                  █  ███████▄██████
-                     ██████████████
-                     █████████▐▌██▌
-                     ▐▀▐ ▌▀█▀ ▐ █
-                           ▐    ▌
-                                 '
+echo -e '\e[31m '
 
 		   echo -n -e '\e[36m please input your target <:domain:> here > ::'
 		   read A 
@@ -42,30 +27,7 @@ echo -e '\e[31m
 		   whatweb -i violator.txt | cat > ACCESS.points.txt
 		   
 		        
-      echo -e '\e[33m  
-           ▄▄▄▄
-         ▄██████      ▄▄▄█▄
-       ▄██▀   ▀██▄     ████████▄
-      ███       ██      █▀▀▀▀▀██▄▄
-     ▄██▌       ██     ▐▌        ▀█▄
-     ███  ▐█ █▌ ██     █▌          ▀▌
-    ████ ▐█▌ ▐█▌██    █
-   ▐████ ▐     ▌██   █
-    ████   ▄█   ██  ▐█
-    ████   ██  ██▌  █▌
-    ████▌ ▐█  ███   █
-    ▐████  ▌ ███   ██
-     ████   ███    █▌
-   ██████▌ ████   ██
- ▐████████████  ███
- █████████████▄████
-██████████████████
-██████████████████
-█████████████████▀
-█████████████████
-████████████████
-████████████████
-'
+      echo -e '\e[33m '
                     
 sudo mv violator.txt ./$A
 
@@ -97,9 +59,9 @@ sudo mv DNS ./$A
 	 echo '(){7} Masscan                |              ()'
          echo '()()()()()()()()()()()()()()()()()()()()()()()'
      
-read type
+read Z
 
-if [ $type -eq 1 ]; then
+if [ $Z -eq 1 ]; then
       echo '#######################'
       echo 'insert target for vulns'
       echo '#######################'
@@ -111,7 +73,7 @@ echo 'complete'
 echo '########'
 fi
 
-if [ $type -eq 2 ]; then
+if [ $Z -eq 2 ]; then
 echo '###################################'
 echo 'input target for enum and dns-brute'
 echo '###################################
@@ -122,7 +84,7 @@ echo '########'
 echo 'complete'
 echo '########'
 fi
-if [ $type -eq 3 ]; then
+if [ $Z -eq 3 ]; then
 echo '#############################'
 echo 'place target for nuclei magic'
 echo '#############################'
@@ -132,7 +94,7 @@ echo '########'
 echo 'complete'
 echo '########'
 fi
-   if [ $type -eq 4 ]; then
+   if [ $Z -eq 4 ]; then
    echo '#######################################'
    echo 'place the target you want to bruteforce'
    echo '#######################################'
@@ -143,7 +105,7 @@ echo '########'
 echo 'complete'
 echo '########'
 fi
-if [ $type -eq 5 ]; then
+if [ $Z -eq 5 ]; then
 echo '#############################'
 echo 'place your target <domain/ip>'
 echo '#############################'
@@ -154,7 +116,7 @@ echo '########'
 echo 'complete'
 echo '########'
 fi
-if [ $type -eq 6 ]; then
+if [ $Z -eq 6 ]; then
 echo '#################################'
 echo 'place target for normal nmap-scan'
 echo '#################################'
@@ -178,4 +140,8 @@ fi
   echo '##############################'
   read amass
   
-  amass 
+  amass enum -ip -d $amass
+  echo '########'
+  echo 'complete'
+  echo '########'
+  fi
